@@ -1,0 +1,505 @@
+Basic,Copper,Treasure,0,False,None
+Basic,Curse,Curse,0,False,None
+Basic,Estate,Victory,2,False,None
+Basic,Silver,Treasure,3,False,None
+Basic,Duchy,Victory,5,False,None
+Basic,Gold,Treasure,6,False,None
+Basic,Province,Victory,8,False,None
+Dominion,Cellar,Action,2,Card,None
+Dominion,Chapel,Action,2,Card,None
+Dominion,Moat,Action|Reaction,2,Card,None
+Dominion2,Harbinger,Action,3,Card,None
+Dominion2,Merchant,Action,3,Card,None
+Dominion2,Vassal,Action,3,Card,None
+Dominion,Village,Action,3,Card,None
+Dominion,Workshop,Action,3,Card,None
+Dominion,Bureaucrat,Action|Attack,4,Card,None
+Dominion,Gardens,Victory,4,Card,None
+Dominion,Militia,Action|Attack,4,Card,None
+Dominion,Moneylender,Action,4,Card,None
+Dominion2,Poacher,Action,4,Card,None
+Dominion,Remodel,Action,4,Card,None
+Dominion,Smithy,Action,4,Card,None
+Dominion,Throne Room,Action,4,Card,None
+Dominion2,Bandit,Action|Attack,5,Card,None
+Dominion,Council Room,Action,5,Card,None
+Dominion,Festival,Action,5,Card,None
+Dominion,Laboratory,Action,5,Card,None
+Dominion,Library,Action,5,Card,None
+Dominion,Market,Action,5,Card,None
+Dominion,Mine,Action,5,Card,None
+Dominion2,Sentry,Action,5,Card,None
+Dominion,Witch,Action|Attack,5,Card,None
+Dominion2,Artisan,Action,6,Card,None
+Dominion1,Chancellor,Action,3,Card,None
+Dominion1,Woodcutter,Action,3,Card,None
+Dominion1,Feast,Action,4,Card,None
+Dominion1,Spy,Action|Attack,4,Card,None
+Dominion1,Thief,Action|Attack,4,Card,None
+Dominion1,Adventurer,Action,6,Card,None
+Intrigue,Courtyard,Action,2,Card,None
+Intrigue2,Lurker,Action,2,Card,None
+Intrigue,Pawn,Action,2,Card,None
+Intrigue,Masquerade,Action,3,Card,None
+Intrigue,Shanty Town,Action,3,Card,None
+Intrigue,Steward,Action,3,Card,None
+Intrigue,Swindler,Action|Attack,3,Card,None
+Intrigue,Wishing Well,Action,3,Card,None
+Intrigue,Baron,Action,4,Card,None
+Intrigue,Bridge,Action,4,Card,None
+Intrigue,Conspirator,Action,4,Card,None
+Intrigue2,Diplomat,Action|Reaction,4,Card,None
+Intrigue,Ironworks,Action,4,Card,None
+Intrigue2,Mill,Action|Victory,4,Card,None
+Intrigue,Mining Village,Action,4,Card,None
+Intrigue2,Secret Passage,Action,4,Card,None
+Intrigue2,Courtier,Action,5,Card,None
+Intrigue,Duke,Victory,5,Card,None
+Intrigue,Minion,Action|Attack,5,Card,None
+Intrigue2,Patrol,Action,5,Card,None
+Intrigue2,Replace,Action|Attack,5,Card,None
+Intrigue,Torturer,Action|Attack,5,Card,None
+Intrigue,Trading Post,Action,5,Card,None
+Intrigue,Upgrade,Action,5,Card,None
+Intrigue,Harem,Treasure|Victory,6,Card,None
+Intrigue,Nobles,Action|Victory,6,Card,None
+Intrigue1,Secret Chamber,Action|Reaction,2,Card,None
+Intrigue1,Great Hall,Action|Victory,3,Card,None
+Intrigue1,Coppersmith,Action,4,Card,None
+Intrigue1,Scout,Action,4,Card,None
+Intrigue1,Saboteur,Action|Attack,5,Card,None
+Intrigue1,Tribute,Action,5,Card,None
+Seaside,Embargo,Action,2,Card,Embargo tokens
+Seaside,Haven,Action|Duration,2,Card,None
+Seaside,Lighthouse,Action|Duration,2,Card,None
+Seaside,Native Village,Action,2,Card,Native Village mats
+Seaside,Pearl Diver,Action,2,Card,None
+Seaside,Ambassador,Action|Attack,3,Card,None
+Seaside,Fishing Village,Action|Duration,3,Card,None
+Seaside,Lookout,Action,3,Card,None
+Seaside,Smugglers,Action,3,Card,None
+Seaside,Warehouse,Action,3,Card,None
+Seaside,Caravan,Action|Duration,4,Card,None
+Seaside,Cutpurse,Action|Attack,4,Card,None
+Seaside,Island,Action|Victory,4,Card,Island mats
+Seaside,Navigator,Action,4,Card,None
+Seaside,Pirate Ship,Action|Attack,4,Card,Pirate Ship mats|Coin tokens
+Seaside,Salvager,Action,4,Card,None
+Seaside,Sea Hag,Action|Attack,4,Card,None
+Seaside,Treasure Map,Action,4,Card,None
+Seaside,Bazaar,Action,5,Card,None
+Seaside,Explorer,Action,5,Card,None
+Seaside,Ghost Ship,Action|Attack,5,Card,None
+Seaside,Merchant Ship,Action|Duration,5,Card,None
+Seaside,Outpost,Action|Duration,5,Card,None
+Seaside,Tactician,Action|Duration,5,Card,None
+Seaside,Treasury,Action,5,Card,None
+Seaside,Wharf,Action|Duration,5,Card,None
+Alchemy,Potion,Treasure,4,False,None
+Alchemy,Transmute,Action,Potion,Card,Potions
+Alchemy,Vineyard,Victory,Potion,Card,Potions
+Alchemy,Herbalist,Action,2,Card,None
+Alchemy,Apothecary,Action,2+Potion,Card,Potions
+Alchemy,Scrying Pool,Action|Attack,2+Potion,Card,Potions
+Alchemy,University,Action,2+Potion,Card,Potions
+Alchemy,Alchemist,Action,3+Potion,Card,Potions
+Alchemy,Familiar,Action|Attack,3+Potion,Card,Potions
+Alchemy,Philosopher's Stone,Treasure,3+Potion,Card,Potions
+Alchemy,Golem,Action,4+Potion,Card,Potions
+Alchemy,Apprentice,Action,5,Card,None
+Alchemy,Possession,Action,6+Potion,Card,Potions
+Prosperity,Platinum,Treasure,9,False,None
+Prosperity,Colony,Victory,11,False,None
+Prosperity,Loan,Treasure,3,Card,None
+Prosperity,Trade Route,Action,3,Card,Trade Route mat|Coin tokens
+Prosperity,Watchtower,Action|Reaction,3,Card,None
+Prosperity,Bishop,Action,4,Card,Victory Point tokens
+Prosperity,Monument,Action,4,Card,Victory Point tokens
+Prosperity,Quarry,Treasure,4,Card,None
+Prosperity,Talisman,Treasure,4,Card,None
+Prosperity,Worker's Village,Action,4,Card,None
+Prosperity,City,Action,5,Card,None
+Prosperity,Contraband,Treasure,5,Card,None
+Prosperity,Counting House,Action,5,Card,None
+Prosperity,Mint,Action,5,Card,None
+Prosperity,Mountebank,Action|Attack,5,Card,None
+Prosperity,Rabble,Action|Attack,5,Card,None
+Prosperity,Royal Seal,Treasure,5,Card,None
+Prosperity,Vault,Action,5,Card,None
+Prosperity,Venture,Treasure,5,Card,None
+Prosperity,Goons,Action|Attack,6,Card,Victory Point tokens
+Prosperity,Grand Market,Action,6*,Card,None
+Prosperity,Hoard,Treasure,6,Card,None
+Prosperity,Bank,Treasure,7,Card,None
+Prosperity,Expand,Action,7,Card,None
+Prosperity,Forge,Action,7,Card,None
+Prosperity,King's Court,Action,7,Card,None
+Prosperity,Peddler,Action,8*,Card,None
+Cornucopia,Hamlet,Action,2,Card,None
+Cornucopia,Fortune Teller,Action|Attack,3,Card,None
+Cornucopia,Menagerie,Action,3,Card,None
+Cornucopia,Farming Village,Action,4,Card,None
+Cornucopia,Horse Traders,Action|Reaction,4,Card,None
+Cornucopia,Remake,Action,4,Card,None
+Cornucopia,Tournament,Action,4,Card,Prizes
+Cornucopia,Young Witch,Action|Attack,4,Card,Bane
+Cornucopia,Harvest,Action,5,Card,None
+Cornucopia,Horn of Plenty,Treasure,5,Card,None
+Cornucopia,Hunting Party,Action,5,Card,None
+Cornucopia,Jester,Action|Attack,5,Card,None
+Cornucopia,Fairgrounds,Victory,6,Card,None
+Cornucopia,Bag of Gold,Action|Prize,0*,False,None
+Cornucopia,Diadem,Treasure|Prize,0*,False,None
+Cornucopia,Followers,Action|Attack|Prize,0*,False,None
+Cornucopia,Princess,Action|Prize,0*,False,None
+Cornucopia,Trusty Steed,Action|Prize,0*,False,None
+Hinterlands,Crossroads,Action,2,Card,None
+Hinterlands,Duchess,Action,2,Card,None
+Hinterlands,Fool's Gold,Treasure|Reaction,2,Card,None
+Hinterlands,Develop,Action,3,Card,None
+Hinterlands,Oasis,Action,3,Card,None
+Hinterlands,Oracle,Action|Attack,3,Card,None
+Hinterlands,Scheme,Action,3,Card,None
+Hinterlands,Tunnel,Victory|Reaction,3,Card,None
+Hinterlands,Jack of All Trades,Action,4,Card,None
+Hinterlands,Noble Brigand,Action|Attack,4,Card,None
+Hinterlands,Nomad Camp,Action,4,Card,None
+Hinterlands,Silk Road,Victory,4,Card,None
+Hinterlands,Spice Merchant,Action,4,Card,None
+Hinterlands,Trader,Action|Reaction,4,Card,None
+Hinterlands,Cache,Treasure,5,Card,None
+Hinterlands,Cartographer,Action,5,Card,None
+Hinterlands,Embassy,Action,5,Card,None
+Hinterlands,Haggler,Action,5,Card,None
+Hinterlands,Highway,Action,5,Card,None
+Hinterlands,Ill-Gotten Gains,Treasure,5,Card,None
+Hinterlands,Inn,Action,5,Card,None
+Hinterlands,Mandarin,Action,5,Card,None
+Hinterlands,Margrave,Action|Attack,5,Card,None
+Hinterlands,Stables,Action,5,Card,None
+Hinterlands,Border Village,Action,6,Card,None
+Hinterlands,Farmland,Victory,6,Card,None
+Dark Ages,Abandoned Mine,Action|Ruins,0,False,None
+Dark Ages,Ruined Library,Action|Ruins,0,False,None
+Dark Ages,Ruined Market,Action|Ruins,0,False,None
+Dark Ages,Ruined Village,Action|Ruins,0,False,None
+Dark Ages,Survivors,Action|Ruins,0,False,None
+Dark Ages,Poor House,Action,1,Card,None
+Dark Ages,Beggar,Action|Reaction,2,Card,None
+Dark Ages,Squire,Action,2,Card,None
+Dark Ages,Vagrant,Action,2,Card,None
+Dark Ages,Forager,Action,3,Card,None
+Dark Ages,Hermit,Action,3,Card,Madman pile
+Dark Ages,Market Square,Action|Reaction,3,Card,None
+Dark Ages,Sage,Action,3,Card,None
+Dark Ages,Storeroom,Action,3,Card,None
+Dark Ages,Urchin,Action|Attack,3,Card,Mercenary pile
+Dark Ages,Armory,Action,4,Card,None
+Dark Ages,Death Cart,Action|Looter,4,Card,Ruins
+Dark Ages,Feodum,Victory,4,Card,None
+Dark Ages,Fortress,Action,4,Card,None
+Dark Ages,Ironmonger,Action,4,Card,None
+Dark Ages,Marauder,Action|Attack|Looter,4,Card,Ruins|Spoils
+Dark Ages,Procession,Action,4,Card,None
+Dark Ages,Rats,Action,4,Card,None
+Dark Ages,Scavenger,Action,4,Card,None
+Dark Ages,Wandering Minstrel,Action,4,Card,None
+Dark Ages,Band of Misfits,Action,5,Card,None
+Dark Ages,Bandit Camp,Action,5,Card,Spoils
+Dark Ages,Catacombs,Action,5,Card,None
+Dark Ages,Count,Action,5,Card,None
+Dark Ages,Counterfeit,Treasure,5,Card,None
+Dark Ages,Cultist,Action|Attack|Looter,5,Card,Ruins
+Dark Ages,Graverobber,Action,5,Card,None
+Dark Ages,Knights,Action|Attack|Knight,5,Card,None
+Dark Ages,Mystic,Action,5,Card,None
+Dark Ages,Pillage,Action|Attack,5,Card,Spoils
+Dark Ages,Rebuild,Action,5,Card,None
+Dark Ages,Rogue,Action|Attack,5,Card,None
+Dark Ages,Altar,Action,6,Card,None
+Dark Ages,Hunting Grounds,Action,6,Card,None
+Dark Ages,Dame Anna,Action|Attack|Knight,5,False,None
+Dark Ages,Dame Josephine,Action|Attack|Knight|Victory,5,False,None
+Dark Ages,Dame Molly,Action|Attack|Knight,5,False,None
+Dark Ages,Dame Natalie,Action|Attack|Knight,5,False,None
+Dark Ages,Dame Sylvia,Action|Attack|Knight,5,False,None
+Dark Ages,Sir Bailey,Action|Attack|Knight,5,False,None
+Dark Ages,Sir Destry,Action|Attack|Knight,5,False,None
+Dark Ages,Sir Martin,Action|Attack|Knight,4,False,None
+Dark Ages,Sir Michael,Action|Attack|Knight,5,False,None
+Dark Ages,Sir Vander,Action|Attack|Knight,5,False,None
+Dark Ages,Madman,Action,0*,False,None
+Dark Ages,Mercenary,Action|Attack,0*,False,None
+Dark Ages,Spoils,Treasure,0*,False,None
+Dark Ages,Hovel,Reaction|Shelter,1,False,None
+Dark Ages,Necropolis,Action|Shelter,1,False,None
+Dark Ages,Overgrown Estate,Victory|Shelter,1,False,None
+Guilds,Candlestick Maker,Action,2,Card,Coffers
+Guilds,Stonemason,Action,2+,Card,None
+Guilds,Doctor,Action,3+,Card,None
+Guilds,Masterpiece,Treasure,3+,Card,None
+Guilds,Advisor,Action,4,Card,None
+Guilds,Plaza,Action,4,Card,Coffers
+Guilds,Taxman,Action|Attack,4,Card,None
+Guilds,Herald,Action,4+,Card,None
+Guilds,Baker,Action,5,Card,Coffers|Everyone +1 Coffer
+Guilds,Butcher,Action,5,Card,Coffers
+Guilds,Journeyman,Action,5,Card,None
+Guilds,Merchant Guild,Action,5,Card,Coffers
+Guilds,Soothsayer,Action|Attack,5,Card,None
+Adventures,Coin of the Realm,Treasure|Reserve,2,Card,Tavern mat
+Adventures,Page,Action|Traveller,2,Card,Page Progression pile
+Adventures,Peasant,Action|Traveller,2,Card,Peasant Progression pile
+Adventures,Ratcatcher,Action|Reserve,2,Card,Tavern mat
+Adventures,Raze,Action,2,Card,None
+Adventures,Amulet,Action|Duration,3,Card,None
+Adventures,Caravan Guard,Action|Duration|Reaction,3,Card,None
+Adventures,Dungeon,Action|Duration,3,Card,None
+Adventures,Gear,Action|Duration,3,Card,None
+Adventures,Guide,Action|Reserve,3,Card,Tavern mat
+Adventures,Duplicate,Action|Reserve,4,Card,Tavern mat
+Adventures,Magpie,Action,4,Card,None
+Adventures,Messenger,Action,4,Card,None
+Adventures,Miser,Action,4,Card,Tavern mat
+Adventures,Port,Action,4,Card,None
+Adventures,Ranger,Action,4,Card,Journey token
+Adventures,Transmogrify,Action|Reserve,4,Card,Tavern mat
+Adventures,Artificer,Action,5,Card,None
+Adventures,Bridge Troll,Action|Attack|Duration,5,Card,-1 Coin token
+Adventures,Distant Lands,Action|Reserve|Victory,5,Card,Tavern mat
+Adventures,Giant,Action|Attack,5,Card,Journey token
+Adventures,Haunted Woods,Action|Attack|Duration,5,Card,None
+Adventures,Lost City,Action,5,Card,None
+Adventures,Relic,Treasure|Attack,5,Card,-1 Card token
+Adventures,Royal Carriage,Action|Reserve,5,Card,Tavern mat
+Adventures,Storyteller,Action,5,Card,None
+Adventures,Swamp Hag,Action|Attack|Duration,5,Card,None
+Adventures,Treasure Trove,Treasure,5,Card,None
+Adventures,Wine Merchant,Action|Reserve,5,Card,Tavern mat
+Adventures,Hireling,Action|Duration,6,Card,None
+Adventures,Treasure Hunter,Action|Traveller,3*,False,None
+Adventures,Warrior,Action|Attack|Traveller,4*,False,None
+Adventures,Hero,Action|Traveller,5*,False,None
+Adventures,Champion,Action|Duration,6*,False,None
+Adventures,Soldier,Action|Attack|Traveller,3*,False,None
+Adventures,Fugitive,Action|Traveller,4*,False,None
+Adventures,Disciple,Action|Traveller,5*,False,None
+Adventures,Teacher,Action|Reserve,6*,False,None
+Adventures,Alms,Event,0,Event,None
+Adventures,Borrow,Event,0,Event,-1 Card token
+Adventures,Quest,Event,0,Event,None
+Adventures,Save,Event,1,Event,None
+Adventures,Scouting Party,Event,2,Event,None
+Adventures,Travelling Fair,Event,3,Event,None
+Adventures,Bonfire,Event,3,Event,None
+Adventures,Expedition,Event,3,Event,None
+Adventures,Ferry,Event,3,Event,-2 Cost token
+Adventures,Plan,Event,3,Event,Trashing token
+Adventures,Mission,Event,4,Event,None
+Adventures,Pilgrimage,Event,4,Event,Journey token
+Adventures,Ball,Event,5,Event,-1 Coin token
+Adventures,Raid,Event,5,Event,None
+Adventures,Seaway,Event,5,Event,+1 Buy token
+Adventures,Trade,Event,5,Event,None
+Adventures,Lost Arts,Event,6,Event,+1 Action token
+Adventures,Training,Event,6,Event,+1 Coin token
+Adventures,Inheritance,Event,7,Event,Estate token
+Adventures,Pathfinding,Event,8,Event,+1 Card token
+Empires,Engineer,Action,4 Debt,Card,Debt tokens
+Empires,City Quarter,Action,8 Debt,Card,Debt tokens
+Empires,Overlord,Action,8 Debt,Card,Debt tokens
+Empires,Royal Blacksmith,Action,8 Debt,Card,Debt tokens
+Empires,Encampment,Action,2,Card,Plunder pile underneath
+Empires,Plunder,Treasure,5,False,None
+Empires,Patrician,Action,2,Card,Emporium pile underneath
+Empires,Emporium,Action,5,False,None
+Empires,Settlers,Action,2,Card,Bustling Village pile underneath
+Empires,Bustling Village,Action,5,False,None
+Empires,Castles,Victory|Castle,3,Card,Victory Point tokens
+Empires,Catapult,Action|Attack,3,Card,Rocks pile underneath
+Empires,Rocks,Treasure,4,False,None
+Empires,Chariot Race,Action,3,Card,None
+Empires,Enchantress,Action|Attack|Duration,3,Card,None
+Empires,Farmers' Market,Action|Gathering,3,Card,Victory Point tokens
+Empires,Gladiator,Action,3,Card,Fortune pile underneath
+Empires,Fortune,Treasure,8+8 Debt,False,None
+Empires,Sacrifice,Action,4,Card,Victory Point tokens
+Empires,Temple,Action|Gathering,4,Card,Victory Point tokens
+Empires,Villa,Action,4,Card,None
+Empires,Archive,Action|Duration,5,Card,None
+Empires,Capital,Treasure,5,Card,Debt tokens
+Empires,Charm,Treasure,5,Card,None
+Empires,Crown,Action|Treasure,5,Card,None
+Empires,Forum,Action,5,Card,None
+Empires,Groundskeeper,Action,5,Card,Victory Point tokens
+Empires,Legionary,Action|Attack,5,Card,None
+Empires,Wild Hunt,Action|Gathering,5,Card,Victory Point tokens
+Empires,Humble Castle,Treasure|Victory|Castle,3,False,None
+Empires,Crumbling Castle,Victory|Castle,4,False,Victory Point tokens
+Empires,Small Castle,Action|Victory|Castle,5,False,None
+Empires,Haunted Castle,Victory|Castle,6,False,None
+Empires,Opulent Castle,Action|Victory|Castle,7,False,None
+Empires,Sprawling Castle,Victory|Castle,8,False,None
+Empires,Grand Castle,Victory|Castle,9,False,Victory Point tokens
+Empires,King's Castle,Victory|Castle,10,False,None
+Empires,Triumph,Event,5 Debt,Event,Victory Point tokens|Debt tokens
+Empires,Annex,Event,8 Debt,Event,Debt tokens
+Empires,Donate,Event,8 Debt,Event,Debt tokens
+Empires,Advance,Event,0,Event,None
+Empires,Delve,Event,2,Event,None
+Empires,Tax,Event,2,Event,Debt tokens
+Empires,Banquet,Event,3,Event,None
+Empires,Ritual,Event,4,Event,Victory Point tokens
+Empires,Salt the Earth,Event,4,Event,Victory Point tokens
+Empires,Wedding,Event,4+3 Debt,Event,Victory Point tokens
+Empires,Windfall,Event,5,Event,None
+Empires,Conquest,Event,6,Event,Victory Point tokens
+Empires,Dominate,Event,14,Event,Victory Point tokens
+Empires,Aqueduct,Landmark,None,Landmark,Victory Point tokens
+Empires,Arena,Landmark,None,Landmark,Victory Point tokens
+Empires,Bandit Fort,Landmark,None,Landmark,None
+Empires,Basilica,Landmark,None,Landmark,Victory Point tokens
+Empires,Baths,Landmark,None,Landmark,Victory Point tokens
+Empires,Battlefield,Landmark,None,Landmark,Victory Point tokens
+Empires,Colonnade,Landmark,None,Landmark,Victory Point tokens
+Empires,Defiled Shrine,Landmark,None,Landmark,Victory Point tokens
+Empires,Fountain,Landmark,None,Landmark,Victory Point tokens
+Empires,Keep,Landmark,None,Landmark,Victory Point tokens
+Empires,Labyrinth,Landmark,None,Landmark,Victory Point tokens
+Empires,Mountain Pass,Landmark,None,Landmark,Victory Point tokens|Debt tokens
+Empires,Museum,Landmark,None,Landmark,Victory Point tokens
+Empires,Obelisk,Landmark,None,Landmark,Victory Point tokens
+Empires,Orchard,Landmark,None,Landmark,Victory Point tokens
+Empires,Palace,Landmark,None,Landmark,Victory Point tokens
+Empires,Tomb,Landmark,None,Landmark,Victory Point tokens
+Empires,Tower,Landmark,None,Landmark,Victory Point tokens
+Empires,Triumphal Arch,Landmark,None,Landmark,Victory Point tokens
+Empires,Wall,Landmark,None,Landmark,None
+Empires,Wolf Den,Landmark,None,Landmark,None
+Nocturne,Druid,Action|Fate,2,Card,Boons
+Nocturne,Faithful Hound,Action|Reaction,2,Card,None
+Nocturne,Guardian,Night|Duration,2,Card,None
+Nocturne,Monastery,Night,2,Card,None
+Nocturne,Pixie,Action|Fate,2,Card,Boons|Goat heirloom
+Nocturne,Tracker,Action|Fate,2,Card,Boons|Pouch heirloom
+Nocturne,Changeling,Night,3,Card,None
+Nocturne,Fool,Action|Fate,3,Card,Lost in the Woods state|Boons|Lucky Coin heirloom
+Nocturne,Ghost Town,Night|Duration,3,Card,None
+Nocturne,Leprechaun,Action|Doom,3,Card,Wish pile|Hexes|Deluded state|Envious state|Miserable state|Twice Miserable state
+Nocturne,Night Watchman,Night,3,Card,None
+Nocturne,Secret Cave,Action|Duration,3,Card,Magic Lamp heirloom|Wish pile
+Nocturne,Bard,Action|Fate,4,Card,Boons
+Nocturne,Blessed Village,Action|Fate,4,Card,Boons
+Nocturne,Cemetary,Victory,4,Card,Haunted Mirror heirloom|Ghost pile
+Nocturne,Conclave,Action,4,Card,None
+Nocturne,Devil's Workshop,Night,4,Card,Imp pile
+Nocturne,Exorcist,Night,4,Card,Will-o'-Wisp pile|Imp pile|Ghost pile
+Nocturne,Necromancer,Action,4,Card,Zombies
+Nocturne,Shepherd,Action,4,Card,Pasture heirloom
+Nocturne,Skulk,Action|Attack|Doom,4,Card,Hexes|Deluded state|Envious state|Miserable state|Twice Miserable state
+Nocturne,Cobbler,Night|Duration,5,Card,None
+Nocturne,Crypt,Night|Duration,5,Card,None
+Nocturne,Cursed Village,Action|Doom,5,Card,Hexes|Deluded state|Envious state|Miserable state|Twice Miserable state
+Nocturne,Den of Sin,Night|Duration,5,Card,None
+Nocturne,Idol,Treasure|Attack|Fate,5,Card,Boons
+Nocturne,Pooka,Action,5,Card,Cursed Gold heirloom
+Nocturne,Sacred Grove,Action|Fate,5,Card,Boons
+Nocturne,Tormenter,Action|Attack|Doom,5,Card,Imp pile|Hexes|Deluded state|Envious state|Miserable state|Twice Miserable state
+Nocturne,Tragic Hero,Action,5,Card,None
+Nocturne,Vampire,Night|Attack|Doom,5,Card,Hexes|Bat pile|Deluded state|Envious state|Miserable state|Twice Miserable state
+Nocturne,Werewolf,Action|Night|Attack|Doom,5,Card,Hexes|Deluded state|Envious state|Miserable state|Twice Miserable state
+Nocturne,Raider,Night|Duration|Attack,6,Card,None
+Nocturne,Haunted Mirror,Treasure|Heirloom,0,False,Ghost pile
+Nocturne,Magic Lamp,Treasure|Heirloom,0,False,Wish pile
+Nocturne,Goat,Treasure|Heirloom,2,False,None
+Nocturne,Pasture,Treasure|Victory|Heirloom,2,False,None
+Nocturne,Pouch,Treasure|Heirloom,2,False,None
+Nocturne,Cursed Gold,Treasure|Heirloom,4,False,None
+Nocturne,Lucky Coin,Treasure|Heirloom,4,False,None
+Nocturne,Will-o'-Wisp,Action|Spirit,0*,False,None
+Nocturne,Wish,Action,0*,False,None
+Nocturne,Bat,Night,2*,False,None
+Nocturne,Imp,Action|Spirit,2*,False,None
+Nocturne,Zombie Apprentice,Action|Zombie,3,False,None
+Nocturne,Zombie Mason,Action|Zombie,3,False,None
+Nocturne,Zombie Spy,Action|Zombie,3,False,None
+Nocturne,Ghost,Night|Duration|Spirit,4*,False,None
+Nocturne,The Earth's Gift,Boon,None,False,None
+Nocturne,The Field's Gift,Boon,None,False,None
+Nocturne,The Flame's Gift,Boon,None,False,None
+Nocturne,The Forest's Gift,Boon,None,False,None
+Nocturne,The Moon's Gift,Boon,None,False,None
+Nocturne,The Mountain's Gift,Boon,None,False,None
+Nocturne,The River's Gift,Boon,None,False,None
+Nocturne,The Sea's Gift,Boon,None,False,None
+Nocturne,The Sky's Gift,Boon,None,False,None
+Nocturne,The Sun's Gift,Boon,None,False,None
+Nocturne,The Swamp's Gift,Boon,None,False,Will-o'-Wisp pile
+Nocturne,The Wind's Gift,Boon,None,False,None
+Nocturne,Bad Omens,Hex,None,False,None
+Nocturne,Delusion,Hex,None,False,Deluded state
+Nocturne,Envy,Hex,None,False,Envious state
+Nocturne,Famine,Hex,None,False,None
+Nocturne,Fear,Hex,None,False,None
+Nocturne,Greed,Hex,None,False,None
+Nocturne,Haunting,Hex,None,False,None
+Nocturne,Locusts,Hex,None,False,None
+Nocturne,Misery,Hex,None,False,Miserable state|Twice Miserable state
+Nocturne,Plague,Hex,None,False,None
+Nocturne,Poverty,Hex,None,False,None
+Nocturne,War,Hex,None,False,None
+Nocturne,Deluded,State,None,False,None
+Nocturne,Envious,State,None,False,None
+Nocturne,Miserable,State,None,False,None
+Nocturne,Twice Miserable,State,None,False,None
+Nocturne,Lost in the Woods,State,None,False,Boons
+Renaissance,Border Guard,Action,2,Card,Lantern|Horn
+Renaissance,Ducat,Treasure,2,Card,Coffers
+Renaissance,Lackeys,Action,2,Card,Villagers
+Renaissance,Acting Troupe,Action,3,Card,Villagers
+Renaissance,Cargo Ship,Action|Duration,3,Card,None
+Renaissance,Experiment,Action,3,Card,None
+Renaissance,Improve,Action,3,Card,None
+Renaissance,Flag Bearer,Action,4,Card,Flag
+Renaissance,Hideout,Action,4,Card,None
+Renaissance,Inventor,Action,4,Card,None
+Renaissance,Mountain Village,Action,4,Card,None
+Renaissance,Patron,Action|Reaction,4,Card,Villagers|Coffers
+Renaissance,Priest,Action,4,Card,None
+Renaissance,Research,Action|Duration,4,Card,None
+Renaissance,Silk Merchant,Action,4,Card,Villagers|Coffers
+Renaissance,Old Witch,Action|Attack,5,Card,None
+Renaissance,Recruiter,Action,5,Card,Villagers
+Renaissance,Scepter,Treasure,5,Card,None
+Renaissance,Scholar,Action,5,Card,None
+Renaissance,Sculptor,Action,5,Card,Villagers
+Renaissance,Seer,Action,5,Card,None
+Renaissance,Spices,Treasure,5,Card,Coffers
+Renaissance,Swashbuckler,Action,5,Card,Coffers|Treasure Chest
+Renaissance,Treasurer,Action,5,Card,Key
+Renaissance,Villain,Action|Attack,5,Card,Coffers
+Renaissance,Flag,Artifact,None,False,None
+Renaissance,Horn,Artifact,None,False,None
+Renaissance,Key,Artifact,None,False,None
+Renaissance,Lantern,Artifact,None,False,None
+Renaissance,Treasure Chest,Artifact,None,False,None
+Renaissance,Cathedral,Project,3,Project,Project tokens
+Renaissance,City Gate,Project,3,Project,Project tokens
+Renaissance,Pageant,Project,3,Project,Project tokens|Coffers
+Renaissance,Sewers,Project,3,Project,Project tokens
+Renaissance,Star Chart,Project,3,Project,Project tokens
+Renaissance,Exploration,Project,4,Project,Project tokens|Villagers|Coffers
+Renaissance,Fair,Project,4,Project,Project tokens
+Renaissance,Silos,Project,4,Project,Project tokens
+Renaissance,Sinister Plot,Project,4,Project,Project tokens|Coin tokens
+Renaissance,Academy,Project,5,Project,Project tokens|Villagers
+Renaissance,Capitalism,Project,5,Project,Project tokens
+Renaissance,Fleet,Project,5,Project,Project tokens
+Renaissance,Guildhall,Project,5,Project,Project tokens|Coffers
+Renaissance,Piazza,Project,5,Project,Project tokens
+Renaissance,Road Network,Project,5,Project,Project tokens
+Renaissance,Barracks,Project,6,Project,Project tokens
+Renaissance,Crop Rotation,Project,6,Project,Project tokens
+Renaissance,Innovation,Project,6,Project,Project tokens
+Renaissance,Canal,Project,7,Project,Project tokens
+Renaissance,Citadel,Project,8,Project,Project tokens
