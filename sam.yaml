@@ -1,16 +1,18 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: Lambda with spring boot.
+Description: Dominion Kingdom picker using Spring Boot
 
 Resources:
-  LambdaSpringBootFunction:
+  DominionKingdomFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: com.keyholesoftware.lambda.LambdaHandler::handleRequest
+      Handler: com.dominionkingdom.KingdomHandler::handleRequest
       Runtime: java8
-      CodeUri: target/spring-boot-lambda-1.0.0-SNAPSHOT.jar
+      CodeUri: target/dominion-kingdom-1.0.0-SNAPSHOT.jar
       MemorySize: 1512
-      Policies: AWSLambdaBasicExecutionRole
+      Role: !GetAtt
+        - DominionKingdomExecutionRole
+        - Arn
       Timeout: 60
       Events:
         GetResource:
@@ -19,9 +21,65 @@ Resources:
             Path: /{proxy+}
             Method: any
 
+  DominionKingdomExecutionRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole'
+        - !Ref DynamoDBAccess
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+                - 'sts:AssumeRole'
+
+  DominionCardsTable:
+    Type: 'AWS::DynamoDB::Table'
+    Properties:
+      TableName: DominionCards
+      AttributeDefinitions:
+        - AttributeName: Box
+          AttributeType: S
+        - AttributeName: Name
+          AttributeType: S
+      KeySchema:
+        - AttributeName: Box
+          KeyType: HASH
+        - AttributeName: Name
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: '5'
+        WriteCapacityUnits: '5'
+
+  DynamoDBAccess:
+    Properties:
+      Path: /
+      Description: Policy that allows the reading and writing to DDB tables.
+      PolicyDocument:
+        Statement:
+          - Action:
+              - 'dynamodb:Query'
+            Effect: Allow
+            Resource:
+              - !Join
+                - /
+                - - !Join
+                    - ':'
+                    - - 'arn:aws:dynamodb'
+                      - !Ref 'AWS::Region'
+                      - !Ref 'AWS::AccountId'
+                      - table
+                  - !Ref DominionCardsTable
+        Version: 2012-10-17
+    Type: 'AWS::IAM::ManagedPolicy'
+
 Outputs:
-  LambdaSpringBootApi:
+  DominionKingdomApi:
     Description: URL for application
-    Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Stage/languages'
+    Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Stage/box'
     Export:
-      Name: LambdaSpringBootApi
+      Name: DominionApi

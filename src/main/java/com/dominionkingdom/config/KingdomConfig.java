@@ -1,4 +1,4 @@
-package com.keyholesoftware.lambda.config;
+package com.dominionkingdom.config;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 @Configuration
 @EnableWebMvc
 @Profile("lambda")
-public class Config {
+public class KingdomConfig {
 
     /**
      * Create required HandlerMapping, to avoid several default HandlerMapping instances being created

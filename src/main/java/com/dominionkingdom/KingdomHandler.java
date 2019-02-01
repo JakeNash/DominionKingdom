@@ -1,4 +1,4 @@
-package com.keyholesoftware.lambda;
+package com.dominionkingdom;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,13 +11,13 @@ import com.amazonaws.serverless.proxy.spring.SpringBootLambdaContainerHandler;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestStreamHandler;
 
-public class LambdaHandler implements RequestStreamHandler {
+public class KingdomHandler implements RequestStreamHandler {
 
     private static SpringBootLambdaContainerHandler<AwsProxyRequest, AwsProxyResponse> handler;
 
     static {
         try {
-            handler = SpringBootLambdaContainerHandler.getAwsProxyHandler(Application.class);
+            handler = SpringBootLambdaContainerHandler.getAwsProxyHandler(KingdomApplication.class);
             handler.activateSpringProfiles("lambda");
         } catch (ContainerInitializationException e) {
             // Re-throw the exception to force another cold start
