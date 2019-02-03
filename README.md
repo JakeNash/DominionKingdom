@@ -39,4 +39,4 @@ To build the image. First build the application, then build the docker image
     
 # Test
 
-    curl http://localhost:8080/box?box=Dominion
+    curl http://localhost:8080/boxes?boxes=Dominion
