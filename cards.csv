@@ -503,3 +503,13 @@ Renaissance,Crop Rotation,Project,6,Project,Project tokens
 Renaissance,Innovation,Project,6,Project,Project tokens
 Renaissance,Canal,Project,7,Project,Project tokens
 Renaissance,Citadel,Project,8,Project,Project tokens
+Promo,Black Market,Action,3,Card,Black Market deck
+Promo,Dismantle,Action,4,Card,None
+Promo,Envoy,Action,4,Card,None
+Promo,Sauna,Action,4,Card,Avanto pile underneath
+Promo,Avanto,Action,5,False,None
+Promo,Walled Village,Action,4,Card,None
+Promo,Governor,Action,5,Card,None
+Promo,Stash,Treasure,5,Card,None
+Promo,Prince,Action,8,Card,None
+Promo,Summon,Event,5,Event,None
