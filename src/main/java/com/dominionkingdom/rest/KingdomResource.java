@@ -65,12 +65,12 @@ public class KingdomResource {
         }
 
         StringBuilder output = new StringBuilder();
-        output.append("Cards: ");
+        output.append("{ \"Cards\": [");
 
         Collections.shuffle(allCards);
         List<String> cards = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            cards.add(allCards.get(i));
+            cards.add("\"" + allCards.get(i) + "\"");
         }
         output.append(StringUtils.collectionToCommaDelimitedString(cards));
 
@@ -80,12 +80,17 @@ public class KingdomResource {
             Random random = new Random();
             int numCardLikes = random.nextInt(3);
             for (int i = 0; i < numCardLikes; i++) {
-                cardLikes.add(allCardLikes.get(i));
+                cardLikes.add("\"" + allCardLikes.get(i) + "\"");
             }
             if (!cardLikes.isEmpty()) {
-                output.append(" | Card-Likes: ");
+                output.append("], \"Card-Likes\": [");
                 output.append(StringUtils.collectionToCommaDelimitedString(cardLikes));
+                output.append("]}");
+            } else {
+                output.append("]}");
             }
+        } else {
+            output.append("]}");
         }
 
         return output.toString();
