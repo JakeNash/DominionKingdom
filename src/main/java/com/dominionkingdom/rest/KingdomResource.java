@@ -5,12 +5,14 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.document.*;
 import com.amazonaws.services.dynamodbv2.document.spec.QuerySpec;
 import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.management.Query;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -40,7 +42,7 @@ public class KingdomResource {
     }
 
     @GetMapping(path = "/pick")
-    public String getPick(@RequestParam String[] boxes, @RequestParam(required = false) String[] others) {
+    public ResponseEntity<String> getPick(@RequestParam String[] boxes, @RequestParam(required = false) String[] others) {
         List<String> allCards = new ArrayList<>();
         for (String box : boxes) {
             QuerySpec spec = new QuerySpec().withHashKey("Box", box);
@@ -93,6 +95,8 @@ public class KingdomResource {
             output.append("]}");
         }
 
-        return output.toString();
+        HttpHeaders responseHeaders = new HttpHeaders();
+        responseHeaders.set("Access-Control-Allow-Origin", "*");
+        return new ResponseEntity<>(output.toString(), responseHeaders, HttpStatus.OK);
     }
 }

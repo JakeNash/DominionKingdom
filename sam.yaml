@@ -6,7 +6,7 @@ Globals:
   Api:
     Cors:
       AllowMethods: "'*'"
-      AllowHeaders: "'*'"
+      AllowHeaders: "'access-control-allow-headers, access-control-allow-methods, access-control-allow-origin'"
       AllowOrigin: "'*'"
 
 Resources:
