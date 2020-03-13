@@ -13,15 +13,15 @@ def import_csv_to_dynamodb(table_name, csv_file_name, column_names, column_types
             for column_number, column_name in enumerate(column_names):
                 row[column_name] = cur_line[column_number]
 
-            print(str(row['Name']))
+            print(str(row['name']))
             batch.put_item(
                 Item={
-                    'Box': row['Box'],
-                    'Name': row['Name'],
-                    'CardType': row['CardType'],
-                    'Cost': row['Cost'],
-                    'Pickable': row['Pickable'],
-                    'Setup': row['Setup']
+                    'box': row['box'],
+                    'name': row['name'],
+                    'cardType': row['cardType'],
+                    'cost': row['cost'],
+                    'pickable': row['pickable'],
+                    'setup': row['setup']
                 }
             )
 
@@ -29,7 +29,7 @@ def import_csv_to_dynamodb(table_name, csv_file_name, column_names, column_types
 
 
 def main():
-    column_names = 'Box Name CardType Cost Pickable Setup'.split()
+    column_names = 'box name cardType cost pickable setup'.split()
     table_name = 'DominionCards'
     csv_file_name = 'cards.csv'
     column_types = [str, str, int, bool, str, str]

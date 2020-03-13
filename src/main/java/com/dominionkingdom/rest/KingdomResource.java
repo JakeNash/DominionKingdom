@@ -5,6 +5,10 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.document.*;
 import com.amazonaws.services.dynamodbv2.document.spec.QuerySpec;
 import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
+import com.dominionkingdom.model.Card;
+import com.dominionkingdom.model.PickerResponse;
+import com.fasterxml.jackson.databind.MapperFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +29,7 @@ public class KingdomResource {
     private AmazonDynamoDB client = AmazonDynamoDBClientBuilder.defaultClient();
     private DynamoDB dynamoDB = new DynamoDB(client);
     private Table cardTable = dynamoDB.getTable(CARD_TABLE);
+    private ObjectMapper objectMapper = new ObjectMapper();
     
     @GetMapping(path = "/boxes")
     public String getBoxContents(@RequestParam String[] boxes) {
@@ -43,60 +48,80 @@ public class KingdomResource {
 
     @GetMapping(path = "/pick")
     public ResponseEntity<String> getPick(@RequestParam String[] boxes, @RequestParam(required = false) String[] others) {
-        List<String> allCards = new ArrayList<>();
+        List<Card> allCards = new ArrayList<>();
         for (String box : boxes) {
             QuerySpec spec = new QuerySpec().withHashKey("Box", box);
             ItemCollection<QueryOutcome> items = cardTable.query(spec);
             for (Item item : items) {
                 if (item.get("Pickable").equals("Card")) {
-                    allCards.add((String) item.get("Name"));
+                    String json = item.toJSON();
+                    Card card;
+                    try {
+                        objectMapper.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
+                        card = objectMapper.readValue(json, Card.class);
+                    } catch (Exception e) {
+                        return ResponseEntity.status(HttpStatus.FAILED_DEPENDENCY).build();
+                    }
+                    if (null != card) {
+                        allCards.add(card);
+                    } else {
+                        return ResponseEntity.status(HttpStatus.FAILED_DEPENDENCY).build();
+                    }
                 }
             }
         }
-        List<String> allCardLikes = new ArrayList<>();
+        List<Card> allCardLikes = new ArrayList<>();
         if (others != null) {
             for (String other : others) {
                 QuerySpec spec = new QuerySpec().withHashKey("Box", other);
                 ItemCollection<QueryOutcome> items = cardTable.query(spec);
                 for (Item item : items) {
                     if (item.get("Pickable").equals("Event") || item.get("Pickable").equals("Landmark") || item.get("Pickable").equals("Project")) {
-                        allCardLikes.add((String) item.get("Name"));
+                        String json = item.toJSON();
+                        Card cardLike;
+                        try {
+                            objectMapper.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
+                            cardLike = objectMapper.readValue(json, Card.class);
+                        } catch (Exception e) {
+                            return ResponseEntity.status(HttpStatus.FAILED_DEPENDENCY).build();
+                        }
+                        if (null != cardLike) {
+                            allCardLikes.add(cardLike);
+                        } else {
+                            return ResponseEntity.status(HttpStatus.FAILED_DEPENDENCY).build();
+                        }
                     }
                 }
             }
         }
 
-        StringBuilder output = new StringBuilder();
-        output.append("{ \"Cards\": [");
-
         Collections.shuffle(allCards);
-        List<String> cards = new ArrayList<>();
+        List<Card> cards = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            cards.add("\"" + allCards.get(i) + "\"");
+            cards.add(allCards.get(i));
         }
-        output.append(StringUtils.collectionToCommaDelimitedString(cards));
 
+        List<Card> cardLikes = new ArrayList<>();
         if (!allCardLikes.isEmpty()) {
             Collections.shuffle(allCardLikes);
-            List<String> cardLikes = new ArrayList<>();
+            cardLikes = new ArrayList<>();
             Random random = new Random();
             int numCardLikes = random.nextInt(3);
             for (int i = 0; i < numCardLikes; i++) {
-                cardLikes.add("\"" + allCardLikes.get(i) + "\"");
+                cardLikes.add(allCardLikes.get(i));
             }
-            if (!cardLikes.isEmpty()) {
-                output.append("], \"Card-Likes\": [");
-                output.append(StringUtils.collectionToCommaDelimitedString(cardLikes));
-                output.append("]}");
-            } else {
-                output.append("]}");
-            }
-        } else {
-            output.append("]}");
+        }
+
+        PickerResponse pickerResponse = new PickerResponse(cards, cardLikes);
+        String output;
+        try {
+            output = objectMapper.writeValueAsString(pickerResponse);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.FAILED_DEPENDENCY).build();
         }
 
         HttpHeaders responseHeaders = new HttpHeaders();
         responseHeaders.set("Access-Control-Allow-Origin", "*");
-        return new ResponseEntity<>(output.toString(), responseHeaders, HttpStatus.OK);
+        return new ResponseEntity<>(output, responseHeaders, HttpStatus.OK);
     }
 }

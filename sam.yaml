@@ -49,14 +49,14 @@ Resources:
     Properties:
       TableName: DominionCards
       AttributeDefinitions:
-        - AttributeName: Box
+        - AttributeName: box
           AttributeType: S
-        - AttributeName: Name
+        - AttributeName: name
           AttributeType: S
       KeySchema:
-        - AttributeName: Box
+        - AttributeName: box
           KeyType: HASH
-        - AttributeName: Name
+        - AttributeName: name
           KeyType: RANGE
       ProvisionedThroughput:
         ReadCapacityUnits: '5'
