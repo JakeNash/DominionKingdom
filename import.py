@@ -31,7 +31,7 @@ def import_csv_to_dynamodb(table_name, csv_file_name, column_names, column_types
 def main():
     column_names = 'box name cardType cost pickable setup'.split()
     table_name = 'DominionCards'
-    csv_file_name = 'cards.csv'
+    csv_file_name = 'menagerie.csv'
     column_types = [str, str, int, bool, str, str]
     import_csv_to_dynamodb(table_name, csv_file_name, column_names, column_types)
 

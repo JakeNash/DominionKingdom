@@ -1,0 +1,71 @@
+Menagerie,Black Cat,Action|Attack|Reaction,2,Card,None
+Menagerie,Sleigh,Action|Reaction,2,Card,Horses
+Menagerie,Supplies,Treasure,2,Card,Horses
+Menagerie,Camel Train,Action,3,Card,Exile mat
+Menagerie,Goatherd,Action,3,Card,None
+Menagerie,Scrap,Action,3,Card,Horses
+Menagerie,Sheepdog,Action|Reaction,3,Card,None
+Menagerie,Snowy Village,Action,3,Card,None
+Menagerie,Stockpile,Treasure,3,Card,Exile mat
+Menagerie,Bounty Hunter,Action,4,Card,Exile mat
+Menagerie,Cardinal,Action|Attack,4,Card,Exile mat
+Menagerie,Cavalry,Action,4,Card,Horses
+Menagerie,Groom,Action,4,Card,Horses
+Menagerie,Hostelry,Action,4,Card,Horses
+Menagerie,Village Green,Action|Duration|Reaction,4,Card,None
+Menagerie,Barge,Action|Duration,5,Card,None
+Menagerie,Coven,Action|Attack,5,Card,Exile mat
+Menagerie,Displace,Action,5,Card,Exile mat
+Menagerie,Falconer,Action|Reaction,5,Card,None
+Menagerie,Gatekeeper,Action|Duration|Attack,5,Card,Exile mat
+Menagerie,Hunting Lodge,Action,5,Card,None
+Menagerie,Kiln,Action,5,Card,None
+Menagerie,Livery,Action,5,Card,Horses
+Menagerie,Mastermind,Action|Duration,5,Card,None
+Menagerie,Paddock,Action,5,Card,Horses
+Menagerie,Sanctuary,Action,5,Card,Exile mat
+Menagerie,Fisherman,Action,5*,Card,None
+Menagerie,Destrier,Action,6*,Card,None
+Menagerie,Wayfarer,Action,6*,Card,None
+Menagerie,Animal Fair,Action,7*,Card,None
+Menagerie,Horse,Action,3*,False,None
+Menagerie,Delay,Event,0,Event,None
+Menagerie,Desperation,Event,0,Event,None
+Menagerie,Gamble,Event,2,Event,None
+Menagerie,Pursue,Event,2,Event,None
+Menagerie,Ride,Event,2,Event,Horses
+Menagerie,Toil,Event,2,Event,None
+Menagerie,Enhance,Event,3,Event,None
+Menagerie,March,Event,3,Event,None
+Menagerie,Transport,Event,3,Event,Exile mat
+Menagerie,Banish,Event,4,Event,Exile mat
+Menagerie,Bargain,Event,4,Event,Horses
+Menagerie,Invest,Event,4,Event,Exile mat
+Menagerie,Seize the Day,Event,4,Event,None
+Menagerie,Commerce,Event,5,Event,None
+Menagerie,Demand,Event,5,Event,Horses
+Menagerie,Stampede,Event,5,Event,Horses
+Menagerie,Reap,Event,7,Event,None
+Menagerie,Enclave,Event,8,Event,Exile mat
+Menagerie,Alliance,Event,10,Event,None
+Menagerie,Populate,Event,10,Event,None
+Menagerie,Way of the Butterfly,Way,None,Way,None
+Menagerie,Way of the Camel,Way,None,Way,Exile mat
+Menagerie,Way of the Chameleon,Way,None,Way,None
+Menagerie,Way of the Frog,Way,None,Way,None
+Menagerie,Way of the Goat,Way,None,Way,None
+Menagerie,Way of the Horse,Way,None,Way,None
+Menagerie,Way of the Mole,Way,None,Way,None
+Menagerie,Way of the Monkey,Way,None,Way,None
+Menagerie,Way of the Mouse,Way,None,Way,Unused Action costing 2 or 3
+Menagerie,Way of the Mule,Way,None,Way,None
+Menagerie,Way of the Otter,Way,None,Way,None
+Menagerie,Way of the Owl,Way,None,Way,None
+Menagerie,Way of the Ox,Way,None,Way,None
+Menagerie,Way of the Pig,Way,None,Way,None
+Menagerie,Way of the Rat,Way,None,Way,None
+Menagerie,Way of the Seal,Way,None,Way,None
+Menagerie,Way of the Sheep,Way,None,Way,None
+Menagerie,Way of the Squirrel,Way,None,Way,None
+Menagerie,Way of the Turtle,Way,None,Way,None
+Menagerie,Way of the Worm,Way,None,Way,Exile mat

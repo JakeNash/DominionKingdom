@@ -73,7 +73,8 @@ public class KingdomResource {
                 QuerySpec spec = new QuerySpec().withHashKey("box", other);
                 ItemCollection<QueryOutcome> items = cardTable.query(spec);
                 for (Item item : items) {
-                    if (item.get("pickable").equals("Event") || item.get("pickable").equals("Landmark") || item.get("pickable").equals("Project")) {
+                    if (item.get("pickable").equals("Event") || item.get("pickable").equals("Landmark") || item.get("pickable").equals("Project")
+                        || item.get("pickable").equals("Way")) {
                         String json = item.toJSON();
                         Card cardLike;
                         try {
